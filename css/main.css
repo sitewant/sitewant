@@ -1584,16 +1584,12 @@ button {
 
 .content {
     margin-bottom: 50px;
-    border: solid 1px;
-    /* margin:0 145px; */
     margin: 0 auto;
     max-width: 1200px;
-    ;
 }
 
 .box {
-    border: solid 1px;
-    margin-bottom: 134px;
+    padding-bottom: 134px;
     padding-top: 100px;
 }
 
@@ -1653,21 +1649,15 @@ button {
 .picturelist {
     width: 538px;
     height: 400px;
-    /* margin: 67px 86px 0 0; */
     margin-right: 87px;
-    /* background-color:pink; */
     border: solid 4px rgb(240, 240, 240);
     box-shadow: 0 0 0 0 #fff;
-
     position: relative;
 }
 
 .picture {
     width: 100%;
     height: 100%;
-    /* width:538px;
-   height:400px; */
-    border: solid 1px green;
     position: relative;
 }
 
@@ -1848,31 +1838,20 @@ button {
 
 }
 
-
-
-
-
 .planningFrozen {
     overflow: hidden;
 }
 
-
-
-
 .box-text {
 
-    /* background-color: #32bfb2; */
     display: inline-flex;
     justify-content: center;
-    /* align-items: center; */
     flex-direction: column;
 
-    border: palevioletred solid;
 
 }
 
 .box-text h4 {
-    /* letter-spacing: 15px; */
     line-height: 30px;
     font-size: 16px;
 }
@@ -1880,8 +1859,6 @@ button {
 .box-text-swot {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
-
 }
 
 .box-text>.user-text {
@@ -1916,7 +1893,7 @@ button {
 }
 
 .tonglixin {
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 
 
@@ -1963,49 +1940,15 @@ button {
 }
 
 /* 團隊成員 */
-
-
-.section-content5 .content {
-    /* margin:0 100px; */
-
-}
-
 .section-content5 .box {
-
-
-    /* border: solid 5px green; */
-    margin-bottom: 0;
-
     justify-content: space-between;
-
     max-width: 1200px;
+    margin-bottom: 0;
 }
-
-
 
 .member-left,
 .member-right {
-    /* border:solid 1px blue; */
     margin-top: 50px;
-
-}
-
-
-
-
-.member-profile {
-    /* width:592px;
-    height:270px; */
-    /* border:solid 1px; */
-    background-color: rgb(240, 240, 240);
-    border-radius: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    max-width: 592px;
-    max-height: 270px;
-    margin: 0 auto;
 }
 
 .member-left {
@@ -2017,21 +1960,102 @@ button {
     margin-top: 70px;
 }
 
+.member-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 592px;
+    min-height: 270px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 22px;
+}
+
+
 .member-picture {
     width: 230px;
     height: 230px;
-    /* border:solid 1px; */
+    border: solid 1px;
     border-radius: 50%;
-    margin: 20px 0;
+    margin: 20px;
     display: flex;
     overflow: hidden;
+    background-size: cover;
+    background-position: center center;
 
+}
+.member-picture.tammy {
+    background-image: url(../assets/planning/members/tammy-1.jpg);
+}
+.member-profile:hover .tammy{
+    background-image: url(../assets/planning/members/tammy-2.jpg);
+}
+.member-picture.wen {
+    background-image: url(../assets/planning/members/wen-1.jpg);
+}
+.member-profile:hover .wen{
+    background-image: url(../assets/planning/members/wen-2.jpg);
+}
+.member-picture.iris {
+    background-image: url(../assets/planning/members/iris-1.jpg);
+}
+.member-profile:hover .iris{
+    background-image: url(../assets/planning/members/iris-2.jpg);
+}
+.member-picture.jackson {
+    background-image: url(../assets/planning/members/jackson-1.jpg);
+}
+.member-profile:hover .jackson{
+    background-image: url(../assets/planning/members/jackson-2.jpg);
+}
+.member-picture.ashley {
+    background-image: url(../assets/planning/members/ashley-1.jpg);
+}
+.member-profile:hover .ashley{
+    background-image: url(../assets/planning/members/ashley-2.jpg);
+}
+.member-picture.keira {
+    background-image: url(../assets/planning/members/keira-1.jpg);
+}
+.member-profile:hover .keira{
+    background-image: url(../assets/planning/members/keira-2.jpg);
+}
+.member-picture.ellie {
+    background-image: url(../assets/planning/members/ellie-1.jpg);
+}
+.member-profile:hover .ellie{
+    background-image: url(../assets/planning/members/ellie-2.jpg);
+}
+.member-picture.fina {
+    background-image: url(../assets/planning/members/fina-1.jpg);
+}
+.member-profile:hover .fina{
+    background-image: url(../assets/planning/members/fina-2.jpg);
+}
+.member-picture.andy {
+    background-image: url(../assets/planning/members/andy-1.jpg);
+}
+.member-profile:hover .andy{
+    background-image: url(../assets/planning/members/andy-2.jpg);
+}
+.member-picture.pm {
+    background-image: url(../assets/planning/members/Group_221.jpg);
+}
+
+.member-picture.lily {
+    background-image: url(../assets/planning/members/lily-1.jpg);
+}
+.member-profile:hover .lily{
+    background-image: url(../assets/planning/members/lily-2.jpg);
+}
+.member-picture.jani {
+    background-image: url(../assets/planning/members/jani-1.jpg);
 }
 
 .member-content {
     width: 282px;
     height: 208px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2042,10 +2066,6 @@ button {
 .member-content h3 {
     padding-bottom: 20px;
 }
-
-/* .button-item.active {
-    background-color: rgb(255, 209, 0);
-} */
 
 .section {
     display: none;
@@ -2060,6 +2080,11 @@ button {
     color: #fff;
 
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1300px){
+    .member-profile{
+        flex-direction: column;
+    }
 }
 
 /**
