@@ -10,6 +10,12 @@
 
     <title>網站企劃 ｜ 沒事曬曬網 Sitewant</title>
 
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+    </style>
+
+
     <!-- Fontawesome CDN -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="/css/main.css">
@@ -20,7 +26,7 @@
 
     <script src="/js/main.js"></script>
     <script src="/js/planning.js"></script>
-
+   
 </head>
 
 <body id="planning">
@@ -126,29 +132,64 @@
             <div class="button">
                 <div class="section-button-line"></div>
 
-                <button class="button-item active nohover" id="button1">1
+                <button class="button-item button1 nohover bgc-yellow" id="button1">
+                    <img class="buttonPic" src="./assets/planning/button_website.png" alt="">
                     <p class="button-text">網站緣起</p>
-
+                    <svg id="button-svg1" class="button-svg" viewbox="-50 -50 100 102">
+                     
+                        <circle cx="100" cy="50" r="0.25"></circle>
+                        <circle cx="0" cy="50" r="0.25"></circle>
+                        <circle cx="0" cy="-10" r="0.25"></circle>
+                        <polyline points="100,50 0,50 0,-10"></polyline>
+                    </svg>
+                   
                 </button>
+                
 
 
-                <button class="button-item" id="button2">2
+                <button class="button-item button2 bgc-orange" id="button2">
+                    <img class="buttonPic" src="/assets/planning/button_characters.png" alt="">
                     <p class="button-text">人物誌</p>
+                    <svg id="button-svg2" class="button-svg" viewbox="-50 -50 100 102">
+       
+                        <circle cx="85" cy="50" r="0.25"></circle>
+                        <circle cx="0" cy="50" r="0.25"></circle>
+                        <circle cx="0" cy="-10" r="0.25"></circle>
+                        <polyline points="85,50 0,50 0,-10"></polyline>
+                    </svg>
 
                 </button>
 
 
-                <button class="button-item" id="button3">3
+                
+
+
+                <button class="button-item button3 bgc-blue" id="button3">
+                    <img class="buttonPic" src="./assets/planning/button_ux.png" alt="">
                     <p class="button-text">UX設計流程</p>
+                    <svg id="button-svg3" class="button-svg" viewbox="-50 -50 100 102">
+                                         
+                        <circle cx="0" cy="50" r="0.25"></circle>
+                        <circle cx="0" cy="-10" r="0.25"></circle>
+                        <polyline points=" 0,50 0,-10"></polyline>
+                    </svg>
                 </button>
 
 
-                <button class="button-item" id="button4">4
+                <button class="button-item button4 bgc-red" id="button4">
+                    <img class="buttonPic" src="./assets/planning/button_ui.png" alt="">
                     <p class="button-text">UI設計元件</p>
+                    <svg id="button-svg4" class="button-svg" viewbox="-50 -50 100 102">                     
+                        <circle cx="-85" cy="50" r="0.25"></circle>
+                        <circle cx="0" cy="50" r="0.25"></circle>
+                        <circle cx="0" cy="-10" r="0.25"></circle>
+                        <polyline points="-85,50 0,50 0,-10"></polyline>
+                    </svg>
                 </button>
 
 
-                <button class="button-item" id="button5">5
+                <button class="button-item button5 bgc-purple" id="button5">
+                    <img class="buttonPic" src="./assets/planning/button_team.png" alt="">
                     <p class="button-text">團隊介紹</p>
                 </button>
 
@@ -189,8 +230,8 @@
                 <div class="box bottom-box">
                     <div class="picturelist">
                         <ul class="picture">
-                            <li class="SWOT pictureShow">
-                                <img src="./images/picture/SWOT/SWOT1-1.png" alt="">
+                            <li class="SWOT pictureShow" id="SWOT">
+                                <img src="./assets/planning/SWOT/SWOT1-1.png" alt="">
                             </li>
                         </ul>
                         <i class="icon-searchP1 fas fa-search-plus"></i>
@@ -198,7 +239,7 @@
                     <div class="box-text box-text-swot">
                         <h4>曬曬網擁有專業的網站設計業師指導，教授建置團隊實用的設計理論與技巧。團隊成員雖未有完整的網站建置經驗，卻能利用成員們來自不同行業的職場能力與經驗，作為網站企劃的養分，以多元角度設計與思考，使網站功能更貼切不同職業背景的使用者。<br>
                             <br>
-                            <br>
+                            
                             <h4>儘管網站的籌備時間只有短短一個月，某些進階網站功能開發項目尚未確定，但正因為是全新的網站專案，使團隊有機會發揮創造力，設計出符合現今網頁設計學習趨勢的學習網站。未來我們將與更多網頁設計師合作、開發線上學習工具，讓曬曬網成為擁有豐富設計資訊的共享平台。
                             </h4>
                         </h4>
@@ -209,7 +250,8 @@
             </div>
             <div class="bottom-button">
 
-                <button class="button-item" id="button2">2
+                <button class="button-item button2 bgc-orange" id="button2">
+                    <img class="buttonPic" src="./assets/planning/button_characters.png" alt="">
                     <p class="button-text">人物誌</p>
 
                 </button>
@@ -219,12 +261,12 @@
         <section class="section section-content2">
 
             <div class="content ">
-                <h2 class="yellow-text">使用者分析</h2>
+                <h2 class="yellow-text bgc-orange">使用者分析</h2>
                 <div class="box tonglixin">
                     <div class="picturelist shoudong">
                         <ul class="picture">
-                            <li class="userAnalysis pictureShow">
-                                <img src="./images/picture/userAnalysis/userAnalysis1-1.png" alt="">
+                            <li class="userAnalysis pictureShow" id="userAnalysis">
+                                <img src="./assets/planning/userAnalysis/userAnalysis1-1.png" alt="">
                             </li>
                         </ul>
                         <i class="icon-searchP1 fas fa-search-plus"></i>
@@ -256,23 +298,23 @@
 
 
             <div class="content">
-                <h2 class="yellow-text">同理心地圖</h2>
+                <h2 class="yellow-text bgc-orange">同理心地圖</h2>
                 <div class="box bottom-box tonglixin ">
                     <div class="picturelist shoudong2">
                         <ul class="picture" id="tonglixinMap">
                             <li class="tonglixinMap pictureShow">
-                                <img src="./images/picture/tonglixinMap/tonglixinMap1-1.png" alt="">
+                                <img src="./assets/planning/tonglixinMap/tonglixinMap1-1.png" alt="">
                             </li>
-                            <li class="tonglixinMap"><img src="./images/picture/tonglixinMap/tonglixinMap2-1.png"
+                            <li class="tonglixinMap"><img src="./assets/planning/tonglixinMap/tonglixinMap2-1.png"
                                     alt=""></li>
-                            <li class="tonglixinMap"><img src="./images/picture/tonglixinMap/tonglixinMap3-1.png"
+                            <li class="tonglixinMap"><img src="./assets/planning/tonglixinMap/tonglixinMap3-1.png"
                                     alt=""></li>
-                            <li class="tonglixinMap"><img src="./images/picture/tonglixinMap/tonglixinMap4-1.png"
+                            <li class="tonglixinMap"><img src="./assets/planning/tonglixinMap/tonglixinMap4-1.png"
                                     alt=""></li>
                             <i class="arrow-left  displayNone  fas fa-chevron-left"></i>
                             <i class="arrow-right  fas fa-chevron-right"></i>
                         </ul>
-                        <i class="icon-searchP1 fas fa-search-plus"></i>
+                        <i class="icon-search fas fa-search-plus"></i>
                     </div>
                     <div class="box-text ">
                         <h4 class="user-text userA">使用者A</h4>
@@ -315,9 +357,9 @@
             </div>
             <div class="bottom-button">
 
-                <button class="button-item" id="button3">3
+                <button class="button-item button3 bgc-blue" id="button3">
+                    <img class="buttonPic" src="./assets/planning/button_ux.png" alt="">
                     <p class="button-text">UX設計流程</p>
-
                 </button>
             </div>
         </section>
@@ -326,12 +368,12 @@
         <section class="section section-content3">
 
             <div class="content">
-                <h2 class="yellow-text">功能地圖</h2>
+                <h2 class="yellow-text bgc-blue">功能地圖</h2>
                 <div class="box">
                     <div class="picturelist">
                         <ul class="picture">
-                            <li class="functionalMap pictureShow">
-                                <img src="./images/picture/functionalMap/FunctionalMap1-1.png" alt="">
+                            <li class="functionalMap pictureShow" id="functionalMap">
+                                <img src="./assets/planning/functionalMap/FunctionalMap1-1.png" alt="">
                             </li>
                         </ul>
                         <i class="icon-searchP1 fas fa-search-plus"></i>
@@ -346,30 +388,36 @@
             </div>
 
             <div class="content">
-                <h2 class="yellow-text">Flowchart</h2>
+                <h2 class="yellow-text bgc-blue">Flowchart</h2>
                 <div class="box">
                     <div class="picturelist">
                         <ul class="picture">
-                            <li class="folwchart pictureShow">
-                                <img src="./images/picture/flowchart/flowchart1-1.png" alt="">
+                            <li class="flowchart pictureShow" id="flowchart">
+                                <img src="./assets/planning/flowchart/flowchart1-1.png" alt="">
                             </li>
                         </ul>
                         <i class="icon-searchP1 fas fa-search-plus"></i>
                     </div>
                     <div class="box-text">
-                        <p>關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標
-                        </p>
+                        <h4>Flowchart是什麼？<br>
+
+                            在網站地圖規劃完成之後，就要進行操作流程的檢視。基本上就是流程圖的一種，在繪製的過程中站在使用者的角度來體驗整個操作網站的過程，藉以審視目前的網站規劃與設計是否仍有不完善的地方。仔細思考使用者的操作上的每一個可能性，會不會在網站迷路？會不會走進死胡同？藉著Flowchart來檢視流程邏輯是非常重要的。
+                            </h4>
+                        <h4>我們怎麼做？<br>
+
+                            由於第一版的網站功能並不太複雜，多是頁面呈現，使用者需要做的決策也不多，所以在網站規劃上是相對容易的。在繪製Flowchart的過程中，我可以再次確認使用者在頁面之間的轉換都具備清楚的指引，並且合乎常理，使用者可能需要進行的決策所有可能都被考量進去，才不會造成使用者因為操作上的困惑而提早結束造訪。同時，Flowchart中起終點這個元件，也幫助我們重新思考使用者會透過什麼樣的方式造訪我們的網站，而我們網站的目標又是什麼，才不至於在一個大型專案中迷失。
+                            </h4>
                     </div>
                 </div>
             </div>
 
             <div class="content">
-                <h2 class="yellow-text">UI Flow</h2>
+                <h2 class="yellow-text bgc-blue">UI Flow</h2>
                 <div class="box">
                     <div class="picturelist">
                         <ul class="picture">
-                            <li class="UIflow pictureShow">
-                                <img src="./images/picture/UI flow/UI flow1-1.png" alt="">
+                            <li class="UIflow pictureShow" id="UIflow">
+                                <img src="./assets/planning/UIflow/UIflow1-1.png" alt="">
                             </li>
                         </ul>
                         <i class="icon-searchP1 fas fa-search-plus"></i>
@@ -390,48 +438,48 @@
 
 
             <div class="content">
-                <h2 class="yellow-text">Wireframe</h2>
+                <h2 class="yellow-text bgc-blue">Wireframe</h2>
                 <div class="box bottom-box">
                     <div class="picturelist">
                         <ul class="picture" id="wireframe">
                             <li class="wireframe pictureShow">
-                                <img src="./images/picture/wireframe/wireframe1-1.png" alt="">
+                                <img src="./assets/planning/wireframe/wireframe1-1.png" alt="">
                             </li>
                             <li class="wireframe">
-                                <img src="./images/picture/wireframe/wireframe2-1.png" alt="">
+                                <img src="./assets/planning/wireframe/wireframe2-1.png" alt="">
                             </li>
                             <li class="wireframe">
-                                <img src="./images/picture/wireframe/wireframe3-1.png" alt="">
+                                <img src="./assets/planning/wireframe/wireframe3-1.png" alt="">
                             </li>
                             <li class="wireframe">
-                                <img src="./images/picture/wireframe/wireframe4-1.png" alt="">
+                                <img src="./assets/planning/wireframe/wireframe4-1.png" alt="">
                             </li>
                             <li class="wireframe">
-                                <img src="./images/picture/wireframe/wireframe5-1.png" alt="">
+                                <img src="./assets/planning/wireframe/wireframe5-1.png" alt="">
                             </li>
                             <li class="wireframe">
-                                <img src="./images/picture/wireframe/wireframe6-1.png" alt="">
+                                <img src="./assets/planning/wireframe/wireframe6-1.png" alt="">
                             </li>
                             <li class="wireframe">
-                                <img src="./images/picture/wireframe/wireframe7-1.png" alt="">
+                                <img src="./assets/planning/wireframe/wireframe7-1.png" alt="">
                             </li>
                             <li class="wireframe">
-                                <img src="./images/picture/wireframe/wireframe8-1.png" alt="">
+                                <img src="./assets/planning/wireframe/wireframe8-1.png" alt="">
                             </li>
                             <li class="wireframe">
-                                <img src="./images/picture/wireframe/wireframe9-1.png" alt="">
+                                <img src="./assets/planning/wireframe/wireframe9-1.png" alt="">
                             </li>
                             <li class="wireframe">
-                                <img src="./images/picture/wireframe/wireframe10-1.png" alt="">
+                                <img src="./assets/planning/wireframe/wireframe10-1.png" alt="">
                             </li>
                             <li class="wireframe">
-                                <img src="./images/picture/wireframe/wireframe11-1.png" alt="">
+                                <img src="./assets/planning/wireframe/wireframe11-1.png" alt="">
                             </li>
                             <li class="wireframe">
-                                <img src="./images/picture/wireframe/wireframe12-1.png" alt="">
+                                <img src="./assets/planning/wireframe/wireframe12-1.png" alt="">
                             </li>
                             <li class="wireframe">
-                                <img src="./images/picture/wireframe/wireframe13-1.png" alt="">
+                                <img src="./assets/planning/wireframe/wireframe13-1.png" alt="">
                             </li>
                             <i class="arrow-left  displayNone  fas fa-chevron-left"></i>
                             <i class="arrow-right  fas fa-chevron-right"></i>
@@ -451,9 +499,9 @@
             </div>
             <div class="bottom-button">
 
-                <button class="button-item" id="button4">4
+                <button class="button-item button4 bgc-red" id="button4">
+                    <img class="buttonPic" src="./assets/planning/button_ui.png" alt="">
                     <p class="button-text">UI設計元件</p>
-
                 </button>
             </div>
         </section>
@@ -461,12 +509,12 @@
         <section class="section section-content4">
 
             <div class="content">
-                <h2 class="yellow-text">Logo與站名</h2>
+                <h2 class="yellow-text bgc-red">Logo與站名</h2>
                 <div class="box">
                     <div class="picturelist">
                         <ul class="picture">
-                            <li class="logoSitename pictureShow">
-                                <img src="./images/picture/logoSitename/logoSitename1-1.png" alt="">
+                            <li class="logoSitename pictureShow" id="logoSitename">
+                                <img src="./assets/planning/logoSitename/logoSitename1-1.png" alt="">
                             </li>
                         </ul>
                         <i class="icon-searchP1White fas fa-search-plus"></i>
@@ -489,30 +537,30 @@
             </div>
 
             <div class="content">
-                <h2 class="yellow-text">曬網小夥伴</h2>
+                <h2 class="yellow-text bgc-red">曬網小夥伴</h2>
                 <div class="box">
                     <div class="picturelist">
                         <ul class="picture" id="littlebuddy">
                             <li class="littlebuddy pictureShow">
-                                <img src="./images/picture/littlebuddy/littlebuddy1-1.png" alt="">
+                                <img src="./assets/planning/littlebuddy/littlebuddy1-1.png" alt="">
                             </li>
                             <li class="littlebuddy">
-                                <img src="./images/picture/littlebuddy/littlebuddy2-1.png" alt="">
+                                <img src="./assets/planning/littlebuddy/littlebuddy2-1.png" alt="">
                             </li>
                             <li class="littlebuddy">
-                                <img src="./images/picture/littlebuddy/littlebuddy3-1.png" alt="">
+                                <img src="./assets/planning/littlebuddy/littlebuddy3-1.png" alt="">
                             </li>
                             <li class="littlebuddy">
-                                <img src="./images/picture/littlebuddy/littlebuddy4-1.png" alt="">
+                                <img src="./assets/planning/littlebuddy/littlebuddy4-1.png" alt="">
                             </li>
                             <li class="littlebuddy">
-                                <img src="./images/picture/littlebuddy/littlebuddy5-1.png" alt="">
+                                <img src="./assets/planning/littlebuddy/littlebuddy5-1.png" alt="">
                             </li>
                             <li class="littlebuddy">
-                                <img src="./images/picture/littlebuddy/littlebuddy6-1.png" alt="">
+                                <img src="./assets/planning/littlebuddy/littlebuddy6-1.png" alt="">
                             </li>
                             <li class="littlebuddy">
-                                <img src="./images/picture/littlebuddy/littlebuddy7-1.png" alt="">
+                                <img src="./assets/planning/littlebuddy/littlebuddy7-1.png" alt="">
                             </li>
                             <i class="arrow-left displayNone fas fa-chevron-left"></i>
                             <i class="arrow-right  fas fa-chevron-right"></i>
@@ -534,18 +582,18 @@
             </div>
 
             <div class="content">
-                <h2 class="yellow-text">設計規範</h2>
+                <h2 class="yellow-text bgc-red">設計規範</h2>
                 <div class="box">
                     <div class="picturelist">
-                        <ul class="picture" id="designGuid">
-                            <li class="designGuid pictureShow">
-                                <img src="./images/picture/designGuid/designGuid1-1.png" alt="">
+                        <ul class="picture" id="designGuide">
+                            <li class="designGuide pictureShow">
+                                <img src="./assets/planning/designGuide/designGuide1-1.png" alt="">
                             </li>
-                            <li class="designLimit">
-                                <img src="./images/picture/designGuid/designGuid2-1.png" alt="">
+                            <li class="designGuide">
+                                <img src="./assets/planning/designGuide/designGuide2-1.png" alt="">
                             </li>
-                            <li class="designLimit">
-                                <img src="./images/picture/designGuid/designGuid3-1.png" alt="">
+                            <li class="designGuide">
+                                <img src="./assets/planning/designGuide/designGuide3-1.png" alt="">
                             </li>
                             <i class="arrow-left displayNone fas fa-chevron-left"></i>
                             <i class="arrow-right fas fa-chevron-right"></i>
@@ -555,22 +603,19 @@
                         <i class="icon-search fas fa-search-plus"></i>
                     </div>
                     <div class="box-text">
-                        <h4>色彩：<br>
-                            採用繽紛、活潑、多樣化的氛圍作為主色調，並用黑灰白色階，凸顯設計層次。
+                        <h4 class="box-textSitename">色彩：</h4>
+                        <h4>採用繽紛、活潑、多樣化的氛圍作為主色調，並用黑灰白色階，凸顯設計層次。
                         </h4>
-                        <br>
-                        <h4>按鈕：<br>
-                            分為功能型、文字連結型、卡片型，在懸浮、點擊、聚焦狀態時皆有變化，以利使用者更直覺的操作介面。
+                        <h4 class="box-textSitename">按鈕：</h4>
+                        <h4>分為功能型、文字連結型、卡片型，在懸浮、點擊、聚焦狀態時皆有變化，以利使用者更直覺的操作介面。
                         </h4>
-                        <br>
-                        <h4>字體：<br>
-                            中文字體Noto Sans CJK／英文字體lexend
-                            根據大小，分為標題時使用的H1～H6及內文使用的段落文字標籤。
+                        
+                        <h4 class="box-textSitename">字體：</h4>
+                        <h4>中文字體Noto Sans CJK／英文字體lexend根據大小，分為標題時使用的H1～H6及內文使用的段落文字標籤。
                         </h4>
-                        <br>
-                        <h4>
-                            元素：<br>
-                            根據設計風格、標準色及網站內容，製作出各式向量小圖，增加設計豐富度。
+                        <h4 class="box-textSitename">
+                            元素：</h4>
+                        <h4>根據設計風格、標準色及網站內容，製作出各式向量小圖，增加設計豐富度。
 
                         </h4>
                     </div>
@@ -579,30 +624,30 @@
 
 
             <div class="content">
-                <h2 class="yellow-text">MockFlow</h2>
+                <h2 class="yellow-text bgc-red">MockFlow</h2>
                 <div class="box bottom-box">
                     <div class="picturelist">
                         <ul class="picture" id="mockflow">
                             <li class="mockflow pictureShow">
-                                <img src="./images/picture/mockflow/mockflow1-1.png" alt=""></li>
+                                <img src="./assets/planning/mockflow/mockflow1-1.png" alt=""></li>
                             <li class="mockflow">
-                                <img src="./images/picture/mockflow/mockflow2-1.png" alt=""></li>
+                                <img src="./assets/planning/mockflow/mockflow2-1.png" alt=""></li>
                             <li class="mockflow">
-                                <img src="./images/picture/mockflow/mockflow3-1.png" alt=""></li>
+                                <img src="./assets/planning/mockflow/mockflow3-1.png" alt=""></li>
                             <li class="mockflow">
-                                <img src="./images/picture/mockflow/mockflow4-1.png" alt=""></li>
+                                <img src="./assets/planning/mockflow/mockflow4-1.png" alt=""></li>
                             <li class="mockflow">
-                                <img src="./images/picture/mockflow/mockflow5-1.png" alt=""></li>
+                                <img src="./assets/planning/mockflow/mockflow5-1.png" alt=""></li>
                             <li class="mockflow">
-                                <img src="./images/picture/mockflow/mockflow6-1.png" alt=""></li>
+                                <img src="./assets/planning/mockflow/mockflow6-1.png" alt=""></li>
                             <li class="mockflow">
-                                <img src="./images/picture/mockflow/mockflow7-1.png" alt=""></li>
+                                <img src="./assets/planning/mockflow/mockflow7-1.png" alt=""></li>
                             <li class="mockflow">
-                                <img src="./images/picture/mockflow/mockflow8-1.png" alt=""></li>
+                                <img src="./assets/planning/mockflow/mockflow8-1.png" alt=""></li>
                             <li class="mockflow">
-                                <img src="./images/picture/mockflow/mockflow9-1.png" alt=""></li>
+                                <img src="./assets/planning/mockflow/mockflow9-1.png" alt=""></li>
                             <li class="mockflow">
-                                <img src="./images/picture/mockflow/mockflow10-1.png" alt=""></li>
+                                <img src="./assets/planning/mockflow/mockflow10-1.png" alt=""></li>
                             <i class="arrow-left displayNone fas fa-chevron-left"></i>
                             <i class="arrow-right  fas fa-chevron-right"></i>
                         </ul>
@@ -611,8 +656,7 @@
                         <i class="icon-search fas fa-search-plus"></i>
                     </div>
                     <div class="box-text">
-                        <h4>Mock Flow</h4>
-                        <br>
+                        
                         <h4>將LOGO、icon、設計規範與曬曬網小夥伴配置安排於網頁並進行微調，顧及使用者便利性與整體設計，視覺互動包括按鈕，選單等元素呈現構思，將流程合乎邏輯串連起來，幫助使用者可以更便利使用產品。
                         </h4>
 
@@ -623,9 +667,9 @@
             </div>
             <div class="bottom-button">
 
-                <button class="button-item" id="button5">5
+                <button class="button-item button5 bgc-purple" id="button5">
+                    <img class="buttonPic" src="./assets/planning/button_team.png" alt="">
                     <p class="button-text">團隊介紹</p>
-
                 </button>
             </div>
         </section>
@@ -638,7 +682,7 @@
                     <div class="member-left first">
                         <div class="member-profile" id="tammy">
                             <div class="member-picture">
-                                <img class="tammy" src="./images/members/tammy-1.jpg" alt="">
+                                <img class="tammy" src="./assets/planning/members/tammy-1.jpg" alt="">
                             </div>
                             <div class="member-content">
                                 <h2 class="name-ch">李宥歆</h2>
@@ -653,7 +697,7 @@
                     <div class="member-right first">
                         <div class="member-profile" id="wen">
                             <div class="member-picture">
-                                <img class="wen" src="./images/members/wen-1.jpg" alt="">
+                                <img class="wen" src="./assets/planning/members/wen-1.jpg" alt="">
                             </div>
                             <div class="member-content">
                                 <h2 class="name-ch">吳文琦</h2>
@@ -672,7 +716,7 @@
                     <div class="member-left">
                         <div class="member-profile" id="iris">
                             <div class="member-picture">
-                                <img class="iris" src="./images/members/iris-1.jpg" alt="">
+                                <img class="iris" src="./assets/planning/members/iris-1.jpg" alt="">
                             </div>
                             <div class="member-content">
                                 <h2 class="name-ch">何佳潔</h2>
@@ -687,7 +731,7 @@
                     <div class="member-right">
                         <div class="member-profile" id="jackson">
                             <div class="member-picture">
-                                <img class="jackson" src="./images/members/jackson-1.jpg" alt="">
+                                <img class="jackson" src="./assets/planning/members/jackson-1.jpg" alt="">
                             </div>
                             <div class="member-content">
                                 <h2 class="name-ch">林秉鈞</h2>
@@ -707,7 +751,7 @@
                     <div class="member-left">
                         <div class="member-profile" id="ashley">
                             <div class="member-picture">
-                                <img class="ashley" src="./images/members/ashley-1.jpg" alt="">
+                                <img class="ashley" src="./assets/planning/members/ashley-1.jpg" alt="">
                             </div>
                             <div class="member-content">
                                 <h2 class="name-ch">Ashley</h2>
@@ -722,7 +766,7 @@
                     <div class="member-right">
                         <div class="member-profile" id="keira">
                             <div class="member-picture">
-                                <img class="keira" src="./images/members/keira-1.jpg" alt="">
+                                <img class="keira" src="./assets/planning/members/keira-1.jpg" alt="">
                             </div>
                             <div class="member-content">
                                 <h2 class="name-ch">許凌嫣</h2>
@@ -741,7 +785,7 @@
                     <div class="member-left">
                         <div class="member-profile" id="ellie">
                             <div class="member-picture">
-                                <img class="ellie" src="./images/members/ellie-1.jpg" alt="">
+                                <img class="ellie" src="./assets/planning/members/ellie-1.jpg" alt="">
                             </div>
                             <div class="member-content">
                                 <h2 class="name-ch">葉又瑄 </h2>
@@ -756,7 +800,7 @@
                     <div class="member-right">
                         <div class="member-profile" id="fina">
                             <div class="member-picture">
-                                <img class="fina" src="./images/members/fina-1.jpg" alt="">
+                                <img class="fina" src="./assets/planning/members/fina-1.jpg" alt="">
                             </div>
                             <div class="member-content">
                                 <h2 class="name-ch">楊羽絜</h2>
@@ -775,7 +819,7 @@
                     <div class="member-left">
                         <div class="member-profile" id="andy">
                             <div class="member-picture">
-                                <img class="andy" src="./images/members/andy-1.jpg" alt="">
+                                <img class="andy" src="./assets/planning/members/andy-1.jpg" alt="">
                             </div>
                             <div class="member-content">
                                 <h2 class="name-ch">Andy</h2>
@@ -789,7 +833,7 @@
                     <div class="member-right">
                         <div class="member-profile">
                             <div class="member-picture">
-                                <img src="./images/members/2P4066750 (2).jpg" alt="">
+                                <img src="./assets/planning/members/Group 221.png" alt="">
                             </div>
                             <div class="member-content">
                                 <h2 class="name-ch">劉貞宛</h2>
@@ -807,7 +851,7 @@
                     <div class="member-left">
                         <div class="member-profile" id="lily">
                             <div class="member-picture">
-                                <img class="lily" src="./images/members/lily-1.jpg" alt="">
+                                <img class="lily" src="./assets/planning/members/lily-1.jpg" alt="">
                             </div>
                             <div class="member-content">
                                 <h2 class="name-ch">潘家酈</h2>
@@ -823,7 +867,7 @@
                     <div class="member-right ">
                         <div class="member-profile">
                             <div class="member-picture">
-                                <img src="./images/members/jani.png" alt="">
+                                <img src="./assets/planning/members/jani-1.png" alt="">
                             </div>
                             <div class="member-content">
                                 <h2 class="name-ch">Jani</h2>
@@ -846,6 +890,14 @@
                 <img src=" " alt="">
             </div>
         </div>
+        <div class="bigPs displayNone">
+            <div class="bigPictures ">
+                <i class="bigPremove fas fa-times"></i>
+                <img src=" " alt="">
+                <i class="bigP-arrow-right fas fa-chevron-right"></i>
+                <i class="bigP-arrow-left fas fa-chevron-left"></i>
+            </div>
+        </div>
     </main>
 
 
@@ -865,7 +917,7 @@
                     <a class="bottom-line" href="/contact.html">聯絡我們</a>
                 </li>
             </ul>
-            <p><a href="" class="privacy">隱私權政策與免責聲明</a>Copyright © 2021 - present. Design by sitewant</p>
+            <p><a href="#" class="privacy">隱私權政策與免責聲明</a>Copyright © 2021 - present. Design by sitewant</p>
         </div>
     </footer>
     <!-- Modal 彈窗  -->
