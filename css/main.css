@@ -1228,11 +1228,6 @@ main.blog .container {
 
 }
 
-
-.answer-family-title {
-    /* position: relative; */
-}
-
 .answer-h2 {
     display: flex;
     align-items: center;
@@ -1891,11 +1886,6 @@ button {
     font-weight: bold;
 
 }
-
-.tonglixin {
-    /* padding-top: 50px; */
-}
-
 
 .box.tonglixin::after {
     content: "";
