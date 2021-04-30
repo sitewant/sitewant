@@ -8,7 +8,7 @@
  *
  */
 
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -340,7 +340,7 @@ section{
 
 .main {
 
-    background-image: url('/assets/images/index_bg.jpg');
+    background-image: url('./assets/images/index_bg.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -426,6 +426,7 @@ section{
 
 .open.section-move-bg {
     right: 0;
+    overflow: scroll;
 }
 
 .section-move-title {
@@ -536,12 +537,23 @@ input[type="text"] {
     box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
-.section-move-bg>img {
+form > img {
     width: 126px;
     height: 241px;
     position: absolute;
     top: 12%;
     left: -12%;
+    cursor: pointer;
+    animation: ani 2s infinite;
+}
+
+@keyframes ani{ 
+    0%{transform:skewX(2deg);
+    transform-origin:0% 100%;}
+    50%{transform:skewX(-10deg);
+    transform-origin:0% 100%;}
+    100%{transform:skewX(2deg);
+    transform-origin:0% 100%;}
 }
 
 
@@ -553,7 +565,7 @@ input[type="text"] {
 }
 
 .steps_bg {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
@@ -647,7 +659,6 @@ input[type="text"] {
     letter-spacing: 0.05em;
     cursor: pointer;
     z-index: 1000;
-    letter-spacing: 0.05em;
 }
 
 
@@ -990,18 +1001,7 @@ main.blog .container {
     cursor: pointer;
 }
 
-/* .answer-family::after{
-    content: '';
-    width: 0;
-    height: 100%;
-    display:inline-block;
-    position :relative;
-    vertical-align: middle;
-    background: #f00;
-} */
-
 .answer-family-q {
-    /* max-height: 136px; */
     width: 80vw;
     background-color: #fff;
     font-size: 24px;
@@ -1018,7 +1018,7 @@ main.blog .container {
 }
 
 .answer-family-q::after {
-    content: url(./images/photo/qa-deco.png);
+    content: url(../assets/images/fqa_deco.png);
     position: absolute;
     right: -56px;
     bottom: 26px;
@@ -1030,11 +1030,9 @@ main.blog .container {
 }
 
 .answer-family-p {
-    /* display: none; */
     max-height: 0;
     overflow: hidden;
     font-size: 16px;
-    /* border-top: 0px solid #AEAEAE; */
     margin-top: 16px;
     padding-top: 16px;
     font-weight: normal;
@@ -1043,12 +1041,6 @@ main.blog .container {
     line-height: 2;
     letter-spacing: 0.1em;
     transition: 1s;
-
-}
-
-
-.answer-family-title {
-    /* position: relative; */
 }
 
 .answer-h2 {
@@ -1060,18 +1052,16 @@ main.blog .container {
 }
 
 .answer-h2:before {
-    content: url('/assets/images/tri-orange.png');
+    content: url('../assets/images/tri-orange.png');
     width: 40px;
     height: 29px;
     margin-right: 16px;
     transform-origin: center;
     transition: .5s;
-
 }
 
-
 .long .answer-h2:before {
-    content: url('/assets/images/tri-blue.png');
+    content: url('../assets/images/tri-blue.png');
     transform: rotate(180deg) translateY(5px);
 }
 
@@ -1096,10 +1086,51 @@ main.blog .container {
     border-top: none;
 }
 
+.answer-link:hover{
+    color: #F18C16;
+    border-bottom: 1px solid #F18C16;
+}
 
+.answer-link:link{
+    color: #00A0E3;
+    border-bottom: 1px solid #00A0E3;
+}
 
+.faq{
+    position: relative;
+}
 
+.faq-bg{
+    background-image: url(../assets/images/fqa_bg_orange.png);
+    width: 530px;
+    height: 600px;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -150px;
+    right: 0;
+    z-index: 10;
+}
 
+@media screen and (max-width: 1061px) {
+    .long.answer-family-q{
+        padding: 30px 15px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .faq-bg{
+        display: none;
+    }
+
+    .answer-family-q::after {
+        content: none;
+    }
+
+    .long.answer-family-q{
+        box-shadow: none;
+    }
+}
 
 
 /* 下拉符號 */
@@ -1316,7 +1347,6 @@ main.blog .container {
     /* margin:0 145px; */
     margin: 0 auto;
     max-width: 1200px;
-    ;
 }
 
 .box {
@@ -1770,7 +1800,6 @@ main.blog .container {
 }
 
 .section-lists {
-
     display: flex;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -1996,14 +2025,12 @@ main.blog .container {
     flex-direction: column;  
     justify-content: center;
     align-items: center;
-    /* height: 1024px; */
 }
-
 
 .teacher{
     width: 400px;
     /* 詢問 */
-    height: 565px;
+    height: 580px;
     border: 3px solid #F18C16;
     box-sizing: border-box;
     border-radius: 10px;
@@ -2042,7 +2069,6 @@ main.blog .container {
     border-bottom: 3px solid #7362A7;
 }
 
-
 .teacher-p{
     font-size: 16px;
     letter-spacing: 0.05em;
@@ -2079,4 +2105,41 @@ main.blog .container {
 .teacher-a i{
     margin: 0 auto;
     font-size: 25px;
+}
+
+.lecturers{
+    position: relative;
+}
+
+.lecturers-bg{
+    background-image: url(../assets/images/lecturers_bg_green.png);
+    width: 100%;
+    height: 620px;
+    background-position: 130% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    /* top: -250px; */
+    /* right: -125px; */
+    transform: rotate(7.4deg);  
+}
+
+
+@media screen and (max-width: 1020px) {
+    .lecturers-bg {
+        display: none;
+    }
+
+    .intro-p{
+        width: calc(100% - 400px);
+        word-wrap: break-word;
+    }
+
+    .section-lists{
+        padding-bottom: 0;
+    }
+
+    .teacher{
+        margin-bottom: 35px;
+    }
 }
