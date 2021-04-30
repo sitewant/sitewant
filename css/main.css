@@ -1642,28 +1642,12 @@ button {
 
 
 .picturelist {
-    width: 538px;
-    height: 400px;
     margin-right: 87px;
     border: solid 4px rgb(240, 240, 240);
     box-shadow: 0 0 0 0 #fff;
     position: relative;
 }
 
-.picture {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-/* .shoudong
-{
-    margin-top: 130px;
-}
-.shoudong2
-{
-    margin-top:270px;
-} */
 .box-textUi {
     padding-top: 50px;
 }
@@ -1672,19 +1656,8 @@ button {
     width: 100%;
     height: 100%;
 
-    /* max-width: 100%; */
-    /* max-height: 100%;  */
 
-    /* position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); */
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-
-    opacity: 0;
+    display: none;;
 
 }
 
@@ -1694,7 +1667,7 @@ button {
 }
 
 .picture li.pictureShow {
-    opacity: 1;
+    display: block;
 }
 
 .picturelist:hover {
@@ -1728,26 +1701,27 @@ button {
 
 .picturelist .arrow-right,
 .picturelist .arrow-left {
-    color: rgb(235, 91, 71);
-    /* border:solid 1px; */
-    font-size: 11px;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: rgb(243, 243, 243);
     position: absolute;
-
     top: 50%;
     transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    font-size: 11px;
+    text-align: center;
+    color: rgb(235, 91, 71);
+    background-color: rgb(243, 243, 243);
+    border-radius: 50%;
 }
 
 .picturelist .arrow-right {
     right: 10px;
-    z-index: 3;
+    z-index: 1;
 }
 
 .picturelist .arrow-left {
     left: 10px;
-    z-index: 3;
+    z-index: 1;
 
 }
 
@@ -1768,41 +1742,39 @@ button {
 
 .bigPicture,
 .bigPictures {
-    width: 1000px;
-    height: 1000px;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    /* overflow: scroll; */
 }
 
-.bigPicture i,
-.bigPictures .bigPremove {
-    color: #fff;
-    font-size: 80px;
+.bigPremove {
     position: absolute;
-    right: -100px;
-    top: 70px;
-
+    right: 30px;
+    top: 30px;    
+    font-size: 50px;
+    color: #fff;
+    z-index: 1;
 }
 
-.bigPictures .bigP-arrow-right,
-.bigPictures .bigP-arrow-left {
-    color: #fff;
-    font-size: 80px;
+.bigP-arrow-right,
+.bigP-arrow-left {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    font-size: 40px;
+    color: #fff;
 }
 
-.bigPictures>.bigP-arrow-right {
-    right: -80px;
+.bigP-arrow-right {
+    right: 20px;
 }
 
-.bigPictures>.bigP-arrow-left {
-    left: -80px;
+.bigP-arrow-left {
+    left: 20px;
 }
 
 
@@ -1821,15 +1793,12 @@ button {
 
 .bigPicture img,
 .bigPictures img {
-    /* width:200%;
-    height:200%; */
-
-    max-width: 100%;
-    max-height: 100%;
     position: relative;
-    top: 50%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
+    width: 85%;
+    margin: 50px 0;
 
 }
 
@@ -1966,7 +1935,6 @@ button {
 .member-picture {
     width: 230px;
     height: 230px;
-    border: solid 1px;
     border-radius: 50%;
     margin: 20px;
     display: flex;
@@ -2030,7 +1998,7 @@ button {
     background-image: url(../assets/planning/members/andy-2.jpg);
 }
 .member-picture.pm {
-    background-image: url(../assets/planning/members/Group_221.jpg);
+    background-image: url(../assets/planning/members/pm.png);
 }
 
 .member-picture.lily {
@@ -2040,7 +2008,7 @@ button {
     background-image: url(../assets/planning/members/lily-2.jpg);
 }
 .member-picture.jani {
-    background-image: url(../assets/planning/members/jani-1.jpg);
+    background-image: url(../assets/planning/members/jani-1.png);
 }
 
 .member-content {
@@ -2065,12 +2033,12 @@ button {
     display: block;
 }
 
-.member-profile.picHover {
+.member-profile:hover {
     background-color: #FFA295;
     color: #fff;
-
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
+
 @media (max-width: 1300px){
     .member-profile{
         flex-direction: column;
