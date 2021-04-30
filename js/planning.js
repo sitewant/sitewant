@@ -10,7 +10,7 @@
      $('#button-svg1').show();
      $('.button button').on('click',function()
      {
- 
+
          $('.button-item svg').hide();
          
          $(`#button-svg${$(this).attr("id").substr(6)}`).show();
@@ -39,6 +39,7 @@
          $(`#button-svg${$(this).attr("id").substr(6)}`).show();
          $('.button-text').css('color','#000');
          $(`#${$(this).attr("id")} p`).css('color','rgb(116, 116, 116)');
+         // console.log($(this).attr("id").substr(6));
          $('.button button').removeClass('active');
          $(`#button${$(this).attr("id").substr(6)}`).addClass('active');
          
@@ -62,6 +63,7 @@
          var imgLists = $(this).siblings().children();
          var imgListLength = $(imgLists).length;
 
+         
  
          if(imgID < imgListLength){
  
@@ -107,7 +109,7 @@
          }
          else
          {
-=             imgID=imgID - 1;
+             imgID=imgID - 1;
              var childID = imgID ;
              $('#'+parent[0].id +' li').removeClass('pictureShow');
              $('#'+parent[0].id +' li:nth-child(' + childID + ')').addClass('pictureShow');
@@ -115,6 +117,11 @@
         
      })
  
+
+    
+     
+ 
+     
      
          // 放大鏡-單張
  
@@ -162,7 +169,9 @@
      })
  
  
-
+    
+    
+ })
  
  
  // 照片
@@ -171,7 +180,7 @@
      $('.member-profile').on('mouseenter',function()
      {
          $(this).addClass('picHover');
- 
+
          let memberId=$(this)[0].id;
  
          $(`img.${memberId}`).attr('src',`./assets/planning/members/${memberId}-2.jpg`);

@@ -97,7 +97,7 @@
  
  })
  
- // 滑動
+ // 關於頁面：聯絡我們表單滑動
  $(function () {
      $('.section-move').on('click', function () {
          $(this).addClass('open');
@@ -111,7 +111,7 @@
  })
  
  
- // FAQ
+ // FAQ頁面：點擊展開
  $(function () {
  
      $(".answer-family-q").click(function () {
