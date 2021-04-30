@@ -99,12 +99,12 @@
  
  // 滑動
  $(function () {
-     $('.section-move-bg').on('click', function () {
+     $('.section-move').on('click', function () {
          $(this).addClass('open');
          $(document).click(function (e) {
-             var container = $(".section-move-bg"); // 這邊放你想要排除的區塊
+             var container = $(".section-move"); // 這邊放你想要排除的區塊
              if (!container.is(e.target) && container.has(e.target).length === 0) {
-                 $('.section-move-bg').removeClass('open')
+                 $('.section-move').removeClass('open')
              }
          });
      })
