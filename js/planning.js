@@ -54,26 +54,14 @@ $(function () {
     var imgID = 1
     var targetID = '';
     $('.arrow-right').on('click', function () {
-        
+
         var parent = $(this).parent()
-        var parentID = parent[0].id 
-         
-        if (targetID == parentID || targetID == '') {
-            targetID = parentID;
-        } else {
-            imgID = 1;
-            $('#' + targetID).children('.arrow-left').addClass('displayNone');
-            $('#' + targetID).children('.arrow-right').removeClass('displayNone');
+        var parentID = parent[0].id
 
-            $('.' + targetID).removeClass('pictureShow');
-            $('.' + targetID + ':nth-child(' + 1 + ')').addClass('pictureShow');
-            targetID = parentID;
-
-            
-        }
+        origin(targetID, parentID)
 
         var imgListLength = $("#" + parentID).children('li').length;
-        
+
         if (imgID < imgListLength) {
 
             var childID = imgID + 1
@@ -97,23 +85,11 @@ $(function () {
 
     })
 
-
-
     $('.arrow-left').on('click', function () {
         var parent = $(this).parent()
-        var parentID = parent[0].id 
+        var parentID = parent[0].id
 
-        if (targetID == parentID || targetID == '') {
-            targetID = parentID;
-        } else {
-            imgID = 1;
-            $('#' + targetID).children('.arrow-left').addClass('displayNone');
-            $('#' + targetID).children('.arrow-right').removeClass('displayNone');
-
-            $('.' + targetID).removeClass('pictureShow');
-            $('.' + targetID + ':nth-child(' + 1 + ')').addClass('pictureShow');
-            targetID = parentID;
-        }
+        origin(targetID, parentID)
 
         var imgListLength = $("#" + parentID).children('li').length;
 
@@ -124,8 +100,8 @@ $(function () {
             $('.' + parentID).removeClass('pictureShow');
             $('.' + parentID + ':nth-child(' + childID + ')').addClass('pictureShow');
 
-            
-            
+
+
             if (imgID == imgListLength) {
 
                 $(this).siblings('.arrow-right').removeClass('displayNone');
@@ -142,20 +118,95 @@ $(function () {
 
     })
 
+    function origin(targetID, parentID) {
+        
+        if (targetID == targetID || targetID == '') {
+            targetID = parentID;
+        } else {
+            imgID = 1;
+            $('#' + targetID).children('.arrow-left').addClass('displayNone');
+            $('#' + targetID).children('.arrow-right').removeClass('displayNone');
 
-    // 放大鏡-單張
+            $('.' + targetID).removeClass('pictureShow');
+            $('.' + targetID + ':nth-child(' + 1 + ')').addClass('pictureShow');
+            targetID = parentID;
+        }
+    }
 
+    // 放大鏡
+    let list_length = 0
+    let index = 0
+    let target = ''
     $('.icon-search').on('click', function () {
 
+        list_length = $(this).parent().children('li').length
+        // 顯示圖片
+        target = $(this).parent().children('.pictureShow')
+        index = $(this).parent().children().index(target)
+
+        if (list_length == 1) {
+
+            $('.bigP-arrow-left').addClass('displayNone');
+            $('.bigP-arrow-right').addClass('displayNone');
+        } else {
+            
+            
+            $('.bigP-arrow-left').removeClass('displayNone');
+            $('.bigP-arrow-right').removeClass('displayNone');
+            arrowChange()
+            
+        }
+        
+
         let PicName = $(this).parent().children('.pictureShow').children()[0].src;
-
-        $('.bigP').removeClass('displayNone');
-
         $('.bigP img').prop('src', PicName);
+        
+        
+        // 開啟彈窗
+        $('.bigP').removeClass('displayNone');
         $('body').addClass('planningFrozen');
-
+        
     })
 
+
+    function arrowChange() {
+
+        if (list_length > 1 && list_length == index + 1) {
+            $('.bigP-arrow-right').addClass('displayNone');
+            
+        } else if (list_length > 1 && index == 0) {
+            $('.bigP-arrow-left').addClass('displayNone');
+            
+        } else {
+            $('.bigP-arrow-left').removeClass('displayNone');
+            $('.bigP-arrow-right').removeClass('displayNone');
+        }
+    }
+    function arrowClick() {
+        
+        target = ntarget;
+    
+        let PicName = ntarget.children()[0].src;
+
+        arrowChange();
+        $('.bigP img').prop('src', PicName);
+    }
+
+    $('.bigP-arrow-left').on('click', function () {
+        ntarget = target.prev();
+        index = index - 1;
+        arrowChange();
+        arrowClick();
+    })
+    $('.bigP-arrow-right').on('click', function () {
+        ntarget = target.next();
+        
+        index = index + 1;
+        arrowChange();
+        arrowClick();
+    })
+
+    // 關閉彈窗
     $('.bigPremove').on('click', function () {
         $('.bigP').addClass('displayNone');
         $('body').removeClass('planningFrozen');
@@ -165,4 +216,3 @@ $(function () {
 
 
 })
-
