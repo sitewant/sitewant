@@ -54,11 +54,21 @@ $(function () {
     var imgID = 1
     var targetID = '';
     $('.arrow-right').on('click', function () {
-
+        
         var parent = $(this).parent()
         var parentID = parent[0].id
 
-        origin(targetID, parentID)
+        if (targetID == parentID || targetID == '') {
+            targetID = parentID;
+        } else {
+            imgID = 1;
+            $('#' + targetID).children('.arrow-left').addClass('displayNone');
+            $('#' + targetID).children('.arrow-right').removeClass('displayNone');
+
+            $('.' + targetID).removeClass('pictureShow');
+            $('.' + targetID + ':nth-child(' + 1 + ')').addClass('pictureShow');
+            targetID = parentID;
+        }
 
         var imgListLength = $("#" + parentID).children('li').length;
 
@@ -86,10 +96,21 @@ $(function () {
     })
 
     $('.arrow-left').on('click', function () {
+
         var parent = $(this).parent()
         var parentID = parent[0].id
 
-        origin(targetID, parentID)
+        if (targetID == parentID || targetID == '') {
+            targetID = parentID;
+        } else {
+            imgID = 1;
+            $('#' + targetID).children('.arrow-left').addClass('displayNone');
+            $('#' + targetID).children('.arrow-right').removeClass('displayNone');
+
+            $('.' + targetID).removeClass('pictureShow');
+            $('.' + targetID + ':nth-child(' + 1 + ')').addClass('pictureShow');
+            targetID = parentID;
+        }
 
         var imgListLength = $("#" + parentID).children('li').length;
 
@@ -118,20 +139,6 @@ $(function () {
 
     })
 
-    function origin(targetID, parentID) {
-        
-        if (targetID == targetID || targetID == '') {
-            targetID = parentID;
-        } else {
-            imgID = 1;
-            $('#' + targetID).children('.arrow-left').addClass('displayNone');
-            $('#' + targetID).children('.arrow-right').removeClass('displayNone');
-
-            $('.' + targetID).removeClass('pictureShow');
-            $('.' + targetID + ':nth-child(' + 1 + ')').addClass('pictureShow');
-            targetID = parentID;
-        }
-    }
 
     // 放大鏡
     let list_length = 0
