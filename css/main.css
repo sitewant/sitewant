@@ -672,7 +672,6 @@ input[type="text"] {
     transform: translate(-50%, 0);
     width: 144px;
     height: 75px;
-    color: #fff;
     text-align: center;
     font-size: 20px;
 }
@@ -691,6 +690,7 @@ input[type="text"] {
 
 .steps_bg-down>i {
     position: relative;
+    color: #fff;
     top: 34px;
 }
 
