@@ -687,12 +687,12 @@ input[type="text"] {
     border-width: 0 72px 75px 72px;
     border-color: transparent transparent #7362A7 transparent;
 }
-
+/* 
 .steps_bg-down>i {
     position: relative;
     color: #fff;
     top: 34px;
-}
+} */
 
 
 .steps_bg-text-e {
