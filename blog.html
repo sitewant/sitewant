@@ -8,11 +8,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <title>文章列表 ｜ 沒事曬曬網 Sitewant</title> -->
+    <title>文章列表 ｜ 沒事曬曬網 Sitewant</title>
 
     <!-- Fontawesome CDN -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="./css/main.css">
+
+<!-- 新增 字型 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+    </style>
+
 
     <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -102,13 +108,133 @@
                     </ul>
                 </li>
             </ul>
+            <!-- 新增手機 和 手機選單 -->
+            <!-- 手機 -->
+            <div class="mobile-header d-none">
+                <ul class="mobile-navbar ">
+                    <li>
+                        <i class="fas fa-search mobileIcon-search"></i> 
+                    </li>
+                    <li>
+                        <img class="mobile-logo-img" src="/assets/images/logo.png" alt="">
+                    </li>
+                    <li>
+                        <i class="fas fa-bars mobileIcon-button"></i>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        <!-- 手機選單 -->
+        <div class="mobile-menu ">
+            <img class="mobile_index_menuSearch" src="/assets/images/mobile_index_menuSearch.png" alt="">
+            <i class="mobile-menu-remove fas fa-times"></i>
+            <ul class="mobile-menuList">
+                <li class="mobile-menuItem">UX
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="">工具</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="">設計</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="">易用性</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">UI
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="">工具</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="">設計</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="">易用性</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">前端
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="">工具</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="">設計</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="">易用性</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-yellow-menu ">
+            <img class="mobile_index_menuBtn" src="/assets/images/mobile_index_menuBtn.png" alt="">
+            <i class="mobile-yellow-menu-remove fas fa-times"></i>
+            <ul class="mobile-yellow-menuList">
+                <li class="mobile-yellow-menuItem">
+                    <a href="./about.html">關於我們</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="./blog.html">文章</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="">講義</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="./lecturers.html">師資介紹</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="./faq.html">常見問題</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="./planning.html">網站企劃</a>
+                </li>
+                <li class="mobile-yellow-menuItemCont">
+                    <span>聯絡我們</span>
+                    <form action=" " class="mobile-contactForm">
+                        <div class="mobile-contactFormDiv">
+                            <!-- <h2>Hey,</h2>
+                            <h2>有話想偷偷跟我們說嗎？</h2>
+                            <h2>歡迎隨時聯繫我們</h2> -->
+                            <h2>Hey,<br>有話想偷偷跟我們說嗎？<br>歡迎隨時聯繫我們</h2>
+                            <h6 class="mobile-contact-text-en">We don`t bombard you with emails,bed you for money or make you sing abunch of petitions politicians don`s give a shit about.</h6>                        
+                            <div class="mobile-section-move-input">
+                                
+                                <input class="mobile-contact-input-s" type="text">
+                                <div class="mobile-contact-name">姓名Name</div>
+                                
+                            </div>
+            
+                            <div class="mobile-section-move-input">
+                                <input class="mobile-contact-input-s" type="text">
+                                <div class="mobile-contact-name   mobile-email">信箱E-mail</div>
+                            </div>
+            
+                            <div class="mobile-section-move-input">
+                                <textarea class="mobile-contact-message" name="" id="" cols="200" rows="200"></textarea>
+                                <div class="mobile-contact-talk">想說的話...</div>
+                            </div>
+                            <div class="mobile-contact-btnArea">
+                                <img class="mobile_index_contact" src="/assets/images/mobile_index_contact.png" alt="">
+                            <input class="mobile-contact-btn" type="submit" value="送出">
+                            </div>
+                            
+         
+                        </div>
+                        
+                    </form>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <nav class="bread" id="bread">
         <a href="./首頁 0411.html">首頁</a>
         <i class="fas fa-chevron-right"></i>
-        <a href="">關於我們</a>
+        <a href="">文章列表</a>
     </nav>
 
     <!-- blog -->
@@ -146,6 +272,46 @@
             </div>
             <div class="blog_Right">
                 <div class="article_Box">
+                    <!-- 新增 .SmallArticle_Title -->
+                    <div class="SmallArticle_Title">
+                        <h2>JavaScript 是什麼? - 學習該如何開發Web</h2>
+                        <hr class="SmallArticle_TitleLine">
+                    </div>
+                    <div class="article_Left">
+                        <h2 class="article_Title">JavaScript 是什麼? - 學習該如何開發Web</h2>
+                        <h3 class="article_Subtitle">JavaScript 是什麼? - 學習該如何開發Web | MDN</h3>
+                        <h5 class="article_meta">
+                            <span class="article_Date">
+                                2020/20/20
+                            </span>
+                            <span class="article_Author">
+                                作者：楊波絲(h5)
+                            </span>
+                        </h5>
+                        <ul class="article_Tags">
+                            <li>新手上路</li>
+                            <li>JavaScript</li>
+                            <li>JavaScript</li>
+                            
+                        </ul>
+                        <div class="article_Content">
+                            <p class="articleContent">
+                                學習不需要理由，每個人心中都有小小的火花，只要照自己的步調輕鬆學，就有機會發掘自己不一樣的潛能與快樂來源！這就是我們想要推廣的東西。-
+                                                            Hahow CEO Arnold.....
+                            </p>
+                        </div>
+                            
+                    </div>
+                    
+                    <img class="article_img" src="./assets/images/post.png" alt="">
+                    
+                    
+                </div>
+                <div class="article_Box">
+                    <div class="SmallArticle_Title">
+                        <h2>JavaScript 是什麼? - 學習該如何開發Web</h2>
+                        <hr class="SmallArticle_TitleLine">
+                    </div>
                     <div class="article_Left">
                         <h2 class="article_Title">JavaScript 是什麼? - 學習該如何開發Web</h2>
                         <h3 class="article_Subtitle">JavaScript 是什麼? - 學習該如何開發Web | MDN</h3>
@@ -161,12 +327,20 @@
                             <li>新手上路</li>
                             <li>JavaScript</li>
                         </ul>
-                        <p class="article_Content">學習不需要理由，每個人心中都有小小的火花，只要照自己的步調輕鬆學，就有機會發掘自己不一樣的潛能與快樂來源！這就是我們想要推廣的東西。-
-                            Hahow CEO Arnold.....</p>
+                        <div class="article_Content">
+                            <p class="articleContent">
+                                學習不需要理由，每個人心中都有小小的火花，只要照自己的步調輕鬆學，就有機會發掘自己不一樣的潛能與快樂來源！這就是我們想要推廣的東西。-
+                                                            Hahow CEO Arnold.....
+                            </p>
+                        </div>
                     </div>
                     <img class="article_img" src="./assets/images/post.png" alt="">
                 </div>
                 <div class="article_Box">
+                    <div class="SmallArticle_Title">
+                        <h2>JavaScript 是什麼? - 學習該如何開發Web</h2>
+                        <hr class="SmallArticle_TitleLine">
+                    </div>
                     <div class="article_Left">
                         <h2 class="article_Title">JavaScript 是什麼? - 學習該如何開發Web</h2>
                         <h3 class="article_Subtitle">JavaScript 是什麼? - 學習該如何開發Web | MDN</h3>
@@ -182,33 +356,20 @@
                             <li>新手上路</li>
                             <li>JavaScript</li>
                         </ul>
-                        <p class="article_Content">學習不需要理由，每個人心中都有小小的火花，只要照自己的步調輕鬆學，就有機會發掘自己不一樣的潛能與快樂來源！這就是我們想要推廣的東西。-
-                            Hahow CEO Arnold.....</p>
+                        <div class="article_Content">
+                            <p class="articleContent">
+                                學習不需要理由，每個人心中都有小小的火花，只要照自己的步調輕鬆學，就有機會發掘自己不一樣的潛能與快樂來源！這就是我們想要推廣的東西。-
+                                                            Hahow CEO Arnold.....
+                            </p>
+                        </div>
                     </div>
                     <img class="article_img" src="./assets/images/post.png" alt="">
                 </div>
                 <div class="article_Box">
-                    <div class="article_Left">
-                        <h2 class="article_Title">JavaScript 是什麼? - 學習該如何開發Web</h2>
-                        <h3 class="article_Subtitle">JavaScript 是什麼? - 學習該如何開發Web | MDN</h3>
-                        <h5 class="article_meta">
-                            <span class="article_Date">
-                                2020/20/20
-                            </span>
-                            <span class="article_Author">
-                                作者：楊波絲(h5)
-                            </span>
-                        </h5>
-                        <ul class="article_Tags">
-                            <li>新手上路</li>
-                            <li>JavaScript</li>
-                        </ul>
-                        <p class="article_Content">學習不需要理由，每個人心中都有小小的火花，只要照自己的步調輕鬆學，就有機會發掘自己不一樣的潛能與快樂來源！這就是我們想要推廣的東西。-
-                            Hahow CEO Arnold.....</p>
+                    <div class="SmallArticle_Title">
+                        <h2>JavaScript 是什麼? - 學習該如何開發Web</h2>
+                        <hr class="SmallArticle_TitleLine">
                     </div>
-                    <img class="article_img" src="./assets/images/post.png" alt="">
-                </div>
-                <div class="article_Box">
                     <div class="article_Left">
                         <h2 class="article_Title">JavaScript 是什麼? - 學習該如何開發Web</h2>
                         <h3 class="article_Subtitle">JavaScript 是什麼? - 學習該如何開發Web | MDN</h3>
@@ -224,8 +385,12 @@
                             <li>新手上路</li>
                             <li>JavaScript</li>
                         </ul>
-                        <p class="article_Content">學習不需要理由，每個人心中都有小小的火花，只要照自己的步調輕鬆學，就有機會發掘自己不一樣的潛能與快樂來源！這就是我們想要推廣的東西。-
-                            Hahow CEO Arnold.....</p>
+                        <div class="article_Content">
+                            <p class="articleContent">
+                                學習不需要理由，每個人心中都有小小的火花，只要照自己的步調輕鬆學，就有機會發掘自己不一樣的潛能與快樂來源！這就是我們想要推廣的東西。-
+                                                            Hahow CEO Arnold.....
+                            </p>
+                        </div>
                     </div>
                     <img class="article_img" src="./assets/images/post.png" alt="">
                 </div>

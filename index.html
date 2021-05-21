@@ -109,13 +109,139 @@
                     </ul>
                 </li>
             </ul>
+            <!-- 新增手機 和 手機選單 -->
+            <!-- 手機 -->
+            <div class="mobile-header d-none">
+                <ul class="mobile-navbar ">
+                    <li>
+                        <i class="fas fa-search mobileIcon-search"></i> 
+                    </li>
+                    <li>
+                        <img class="mobile-logo-img" src="/assets/images/logo.png" alt="">
+                    </li>
+                    <li>
+                        <i class="fas fa-bars mobileIcon-button"></i>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        <!-- 手機選單 -->
+        <div class="mobile-menu ">
+            <img class="mobile_index_menuSearch" src="/assets/images/mobile_index_menuSearch.png" alt="">
+            <i class="mobile-menu-remove fas fa-times"></i>
+            <ul class="mobile-menuList">
+                <li class="mobile-menuItem">UX
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="">工具</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="">設計</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="">易用性</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">UI
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="">工具</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="">設計</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="">易用性</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">前端
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="">工具</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="">設計</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="">易用性</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-yellow-menu ">
+            <img class="mobile_index_menuBtn" src="/assets/images/mobile_index_menuBtn.png" alt="">
+            <i class="mobile-yellow-menu-remove fas fa-times"></i>
+            <ul class="mobile-yellow-menuList">
+                <li class="mobile-yellow-menuItem">
+                    <a href="./about.html">關於我們</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="./blog.html">文章</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="">講義</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="./lecturers.html">師資介紹</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="./faq.html">常見問題</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="./planning.html">網站企劃</a>
+                </li>
+                <li class="mobile-yellow-menuItemCont">
+                    <span>聯絡我們</span>
+                    <form action=" " class="mobile-contactForm">
+                        <div class="mobile-contactFormDiv">
+                            <!-- <h2>Hey,</h2>
+                            <h2>有話想偷偷跟我們說嗎？</h2>
+                            <h2>歡迎隨時聯繫我們</h2> -->
+                            <h2>Hey,<br>有話想偷偷跟我們說嗎？<br>歡迎隨時聯繫我們</h2>
+                            <h6 class="mobile-contact-text-en">We don`t bombard you with emails,bed you for money or make you sing abunch of petitions politicians don`s give a shit about.</h6>                        
+                            <div class="mobile-section-move-input">
+                                
+                                <input class="mobile-contact-input-s" type="text">
+                                <div class="mobile-contact-name">姓名Name</div>
+                                
+                            </div>
+            
+                            <div class="mobile-section-move-input">
+                                <input class="mobile-contact-input-s" type="text">
+                                <div class="mobile-contact-name   mobile-email">信箱E-mail</div>
+                            </div>
+            
+                            <div class="mobile-section-move-input">
+                                <textarea class="mobile-contact-message" name="" id="" cols="200" rows="200"></textarea>
+                                <div class="mobile-contact-talk">想說的話...</div>
+                            </div>
+                            <div class="mobile-contact-btnArea">
+                                <img class="mobile_index_contact" src="/assets/images/mobile_index_contact.png" alt="">
+                            <input class="mobile-contact-btn" type="submit" value="送出">
+                            </div>
+                            
+         
+                        </div>
+                        
+                    </form>
+                </li>
+            </ul>
+        </div>
     </header>
+    <!-- 修改IMG結構 -->
     <main class="main">
-        <img class="index-bgImage" src="./assets/images/index_bg_image.png" alt="">
-         <img class="index-bg-img mark-red" src="./assets/images/index_bg_littlePic 01.png" alt="">
-        <img class="index-bg-img mark-yellow" src="./assets/images/index_bg_littlePic 02.png" alt="">
-        <img class="index-bg-img mark-blue" src="./assets/images/index_bg_littlePic 03.png" alt="">
+        <div>
+            <img class="index-bgImage" src="./assets/images/index_bg_image.png" alt="">
+            <img class="index-bg-img mark-red" src="./assets/images/index_bg_littlePic 01.png" alt="">
+            <img class="index-bg-img mark-yellow" src="./assets/images/index_bg_littlePic 02.png" alt="">
+            <img class="index-bg-img mark-blue" src="./assets/images/index_bg_littlePic 03.png" alt="">
+        </div>
+            
+        
+        
         
         
     </main>
@@ -136,7 +262,7 @@
                     <a class="bottom-line" href="./contact.html">聯絡我們</a>
                 </li>
             </ul>
-            <p><a href="" class="privacy">隱私權政策與免責聲明</a>Copyright © 2021 - present. Design by sitewant</p>
+            <p><a href="" class="privacy">隱私權政策與免責聲明</a>Copyright © 2021 <span>- present. Design by sitewant</span></p>
         </div>
     </footer>
 

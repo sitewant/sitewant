@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <title>網站企劃 ｜ 沒事曬曬網 Sitewant</title> -->
+    <title>網站企劃 ｜ 沒事曬曬網 Sitewant</title>
 
 
     <style>
@@ -18,14 +18,14 @@
 
     <!-- Fontawesome CDN -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
 
     <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <script src="/js/main.js"></script>
-    <script src="/js/planning.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/planning.js"></script>
    
 </head>
 
@@ -109,7 +109,130 @@
                     </ul>
                 </li>
             </ul>
+            <!-- 新增手機 和 手機選單 -->
+            <!-- 手機 -->
+            <div class="mobile-header d-none">
+                <ul class="mobile-navbar ">
+                    <li>
+                        <i class="fas fa-search mobileIcon-search"></i> 
+                    </li>
+                    <li>
+                        <img class="mobile-logo-img" src="/assets/images/logo.png" alt="">
+                    </li>
+                    <li>
+                        <i class="fas fa-bars mobileIcon-button"></i>
+                    </li>
+                </ul>
+            </div>
         </nav>
+          <!-- 手機選單 -->
+          <div class="mobile-menu ">
+            <img class="mobile_index_menuSearch" src="/assets/images/mobile_index_menuSearch.png" alt="">
+            <i class="mobile-menu-remove fas fa-times"></i>
+            <ul class="mobile-menuList">
+                <li class="mobile-menuItem">UX
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="">工具</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="">設計</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="">易用性</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">UI
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="">工具</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="">設計</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="">易用性</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">前端
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="">工具</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="">設計</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="">易用性</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-yellow-menu ">
+            <img class="mobile_index_menuBtn" src="/assets/images/mobile_index_menuBtn.png" alt="">
+            <i class="mobile-yellow-menu-remove fas fa-times"></i>
+            <ul class="mobile-yellow-menuList">
+                <li class="mobile-yellow-menuItem">
+                    <a href="./about.html">關於我們</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="./blog.html">文章</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="">講義</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="./lecturers.html">師資介紹</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="./faq.html">常見問題</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="./planning.html">網站企劃</a>
+                </li>
+                <li class="mobile-yellow-menuItemCont">
+                    <span>聯絡我們</span>
+                    <form action=" " class="mobile-contactForm">
+                        <div class="mobile-contactFormDiv">
+                            <!-- <h2>Hey,</h2>
+                            <h2>有話想偷偷跟我們說嗎？</h2>
+                            <h2>歡迎隨時聯繫我們</h2> -->
+                            <h2>Hey,<br>有話想偷偷跟我們說嗎？<br>歡迎隨時聯繫我們</h2>
+                            <h6 class="mobile-contact-text-en">We don`t bombard you with emails,bed you for money or make you sing abunch of petitions politicians don`s give a shit about.</h6>                        
+                            <div class="mobile-section-move-input">
+                                
+                                <input class="mobile-contact-input-s" type="text">
+                                <div class="mobile-contact-name">姓名Name</div>
+                                
+                            </div>
+            
+                            <div class="mobile-section-move-input">
+                                <input class="mobile-contact-input-s" type="text">
+                                <div class="mobile-contact-name   mobile-email">信箱E-mail</div>
+                            </div>
+            
+                            <div class="mobile-section-move-input">
+                                <textarea class="mobile-contact-message" name="" id="" cols="200" rows="200"></textarea>
+                                <div class="mobile-contact-talk">想說的話...</div>
+                            </div>
+                            <div class="mobile-contact-btnArea">
+                                <img class="mobile_index_contact" src="/assets/images/mobile_index_contact.png" alt="">
+                            <input class="mobile-contact-btn" type="submit" value="送出">
+                            </div>
+                            
+         
+                        </div>
+                        
+                    </form>
+                </li>
+            </ul>
+        </div>
+            
+      
+        
     </header>
 
     <nav class="bread" id="bread">
@@ -135,7 +258,7 @@
                 <button class="button-item button1 nohover bgc-yellow" id="button1">
                     <img class="buttonPic" src="./assets/planning/button_website.png" alt="">
                     <p class="button-text">網站緣起</p>
-                    <svg id="button-svg1" class="button-svg" viewbox="-50 -50 100 102">
+                    <svg id="button-svg1" class="button-svg displayNone" viewbox="-50 -50 100 102">
                      
                         <circle cx="100" cy="50" r="0.25"></circle>
                         <circle cx="0" cy="50" r="0.25"></circle>
@@ -150,7 +273,7 @@
                 <button class="button-item button2 bgc-orange" id="button2">
                     <img class="buttonPic" src="/assets/planning/button_characters.png" alt="">
                     <p class="button-text">人物誌</p>
-                    <svg id="button-svg2" class="button-svg" viewbox="-50 -50 100 102">
+                    <svg id="button-svg2" class="button-svg displayNone" viewbox="-50 -50 100 102">
        
                         <circle cx="85" cy="50" r="0.25"></circle>
                         <circle cx="0" cy="50" r="0.25"></circle>
@@ -167,7 +290,7 @@
                 <button class="button-item button3 bgc-blue" id="button3">
                     <img class="buttonPic" src="./assets/planning/button_ux.png" alt="">
                     <p class="button-text">UX設計流程</p>
-                    <svg id="button-svg3" class="button-svg" viewbox="-50 -50 100 102">
+                    <svg id="button-svg3" class="button-svg displayNone" viewbox="-50 -50 100 102">
                                          
                         <circle cx="0" cy="50" r="0.25"></circle>
                         <circle cx="0" cy="-10" r="0.25"></circle>
@@ -179,7 +302,7 @@
                 <button class="button-item button4 bgc-red" id="button4">
                     <img class="buttonPic" src="./assets/planning/button_ui.png" alt="">
                     <p class="button-text">UI設計元件</p>
-                    <svg id="button-svg4" class="button-svg" viewbox="-50 -50 100 102">                     
+                    <svg id="button-svg4" class="button-svg displayNone" viewbox="-50 -50 100 102">                     
                         <circle cx="-85" cy="50" r="0.25"></circle>
                         <circle cx="0" cy="50" r="0.25"></circle>
                         <circle cx="0" cy="-10" r="0.25"></circle>
@@ -216,8 +339,10 @@
                         </ul>
                     </div>
                     <div class="box-text">
-                        <p>關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標關於核心目標
-                        </p>
+                       <h4>
+                        沒事曬曬網(Sitewant)是2021年全新落成的網頁設計資源與資訊的分享平台，包含教學講義及知識文章，由一群網頁設計狂熱者聯手打造。
+                        網站內容包含最新趨勢國內外專業文章、網頁設計相關教學講義，讓使用者可以持續學習跟蒐集新知；還有網站企劃單元，能一窺網站從零到一的整個架構過程。除了希望能舒適愉快的使用本網站，也希望平台上的資源能被更多人看到，並一同精進成長甚至分享更豐富的資源。讓我們一起整天曬網曬成網頁高手。
+                        </h4>
                     </div>
                 </div>
 
@@ -227,7 +352,7 @@
 
             <div class="content">
                 <h2 class="yellow-text">SWOT分析</h2>
-                <div class="box">
+                <div class="box bottom-box">
                     <div class="picturelist">
                         <ul class="picture" id="SWOT">
                             <li class="SWOT pictureShow" >
@@ -888,19 +1013,19 @@
         <div class="footerbar container">
             <ul class="footerItem">
                 <li class="footer-item">
-                    <a class="bottom-line" href="/lecturers.html">師資介紹</a>
+                    <a class="bottom-line" href="./lecturers.html">師資介紹</a>
                 </li>
                 <li class="footer-item">
-                    <a class="bottom-line" href="/faq.html">常見問題</a>
+                    <a class="bottom-line" href="./faq.html">常見問題</a>
                 </li>
                 <li class="footer-item">
-                    <a class="bottom-line" href="/planning.html">網站企劃</a>
+                    <a class="bottom-line" href="./planning.html">網站企劃</a>
                 </li>
                 <li class="footer-item">
-                    <a class="bottom-line" href="/contact.html">聯絡我們</a>
+                    <a class="bottom-line" href="./contact.html">聯絡我們</a>
                 </li>
             </ul>
-            <p><a href="#" class="privacy">隱私權政策與免責聲明</a>Copyright © 2021 - present. Design by sitewant</p>
+            <p><a href="" class="privacy">隱私權政策與免責聲明</a>Copyright © 2021 <span>- present. Design by sitewant</span></p>
         </div>
     </footer>
     <!-- Modal 彈窗  -->
