@@ -96,6 +96,101 @@
  
  
  })
+
+//  新增header手機
+//  header手機
+$(function(){
+   
+    $('.mobile-menuItem').on('click',function()
+    {
+        $('.mobile-menuItem').css('background','#7362A7');
+        $('.mobile-menuItem').css('color','#fff');
+        if($(this).children().children().hasClass('long')){
+        $('.mobile-menuItem2').removeClass('long');
+            
+            
+           
+        }else{
+            $('.mobile-menuItem2').removeClass('long');
+            $(this).children().children().addClass('long');
+            $(this).css('background','#fff');
+            $(this).css('color','#000');
+        }
+          
+    })
+
+
+    $('.mobileIcon-search').on('click',function(){
+        $('.mobile-menu').addClass('open');
+    })
+    $('.mobile-menu-remove').on('click',function(){
+        $('.mobile-menu').removeClass('open');
+        $('.mobile-menuItem').css('background','#7362A7');
+        $('.mobile-menuItem').css('color','#fff');
+        $('.mobile-menuItem2').removeClass('long');
+    })
+
+    
+    $('.mobileIcon-button').on('click',function(){
+        $('.mobile-yellow-menu').addClass('open');
+                 
+    })
+
+
+  $('.mobile-yellow-menu-remove').on('click',function(){
+    $('.mobile-yellow-menu').removeClass('open');
+    $('.mobile_index_menuBtn').css('opacity','1');
+    $('.mobile-yellow-menuItem').show();
+    $('.mobile-contactForm').removeClass('open');
+    $('.mobile-yellow-menuItemCont span').css('color','#000');
+    $('.mobile-yellow-menuItemCont').css('background','rgb(255, 209, 0)');
+  })
+
+
+  $('.mobile-yellow-menuItemCont').on('click',function(){
+      $('.mobile-yellow-menuItem').hide();
+      $('.mobile_index_menuBtn').css('opacity','0');
+      $('.mobile-contactForm').addClass('open');
+      $(this).css('background','rgb(109, 94, 158)');
+      $('.mobile-yellow-menuItemCont span').css('color','#fff');
+
+    
+
+  })
+
+
+
+})
+
+
+
+
+
+
+
+$(window).resize(function() {
+    if($(window).width()>768){
+        $('.mobile-yellow-menu').removeClass('open');
+        // $('.mobile-contactForm').removeClass('open');
+         $('.mobile-menu').removeClass('open');
+         $('.mobile-menuItem').css('background','#7362A7');
+        $('.mobile-menuItem').css('color','#fff');
+        $('.mobile-menuItem2').removeClass('long');
+
+    // 新增0510
+        $('.mobile-yellow-menu').removeClass('open');
+        $('.mobile_index_menuBtn').css('opacity','1');
+        $('.mobile-yellow-menuItem').show();
+        $('.mobile-contactForm').removeClass('open');
+        $('.mobile-yellow-menuItemCont span').css('color','#000');
+        $('.mobile-yellow-menuItemCont').css('background','rgb(255, 209, 0)');
+        }
+
+});
+
+
+
+
  
  // 關於頁面：聯絡我們表單滑動
  $(function () {
@@ -109,6 +204,37 @@
          });
      })
  })
+
+
+//  新增 文章列表
+
+$(window).resize(function(){
+    let articleNum = $('.article_Content p').length;
+
+    
+    if($(window).width()<1112){
+
+        for(i=0;i<articleNum;i++){
+            let articleLength = $('.article_Content p')[i].innerText.length;
+            
+            if(articleLength>50){
+
+                let articleLengthLimit = $('.article_Content p')[i].innerText.substr(0,30);
+                $('.article_Content p')[i].innerText=`${articleLengthLimit}...`;
+                
+            }
+
+            
+            
+      
+      
+        }
+
+    
+    }
+
+})
+
  
  
  // FAQ頁面：點擊展開
