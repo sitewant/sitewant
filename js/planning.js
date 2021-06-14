@@ -5,13 +5,16 @@
 $(function () {
     $('#button1 p').css('color', 'rgb(116, 116, 116)');
 
-    $('.button-item svg').hide();
-    $('#button-svg1').show();
+    // $('.button-item svg').hide();
+    // $('#button-svg1').show();
+    $('#button-svg1').addClass('show');
+    // $('.button-item svg').removeClass('show');
     $('.button button').on('click', function () {
 
-        $('.button-item svg').hide();
-
-        $(`#button-svg${$(this).attr("id").substr(6)}`).show();
+        // $('.button-item svg').hide();
+        $('.button-item svg').removeClass('show');
+        $(`#button-svg${$(this).attr("id").substr(6)}`).addClass('show');
+        // $(`#button-svg${$(this).attr("id").substr(6)}`).show();
         $('.button-item ').removeClass('nohover');
         $(`#${$(this).attr("id")}`).addClass('nohover');
         $('.button-text').css('color', '#000');
@@ -31,9 +34,11 @@ $(function () {
         $("html, body").scrollTop(0);
         $('.section').removeClass('active');
         $(`.section-content${$(this).attr("id").substr(6)}`).addClass('active');
-        $('.button-item svg').hide();
-
-        $(`#button-svg${$(this).attr("id").substr(6)}`).show();
+        
+        // $('.button-item svg').hide();
+        $('.button-item svg').removeClass('show');
+        // $(`#button-svg${$(this).attr("id").substr(6)}`).show();
+        $(`#button-svg${$(this).attr("id").substr(6)}`).addClass('show');
         $('.button-text').css('color', '#000');
         $(`#${$(this).attr("id")} p`).css('color', 'rgb(116, 116, 116)');
         // console.log($(this).attr("id").substr(6));

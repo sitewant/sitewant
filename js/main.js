@@ -70,6 +70,9 @@
          $('body').addClass('frozen');
  
      })
+
+
+    //  修改
  
      $(document).mouseup(function (e) {
          var container = $(".header"); // 這邊放你想要排除的區塊
@@ -79,6 +82,10 @@
              $('.modal').removeClass('open');
              $('body').removeClass('frozen');
              $('.menu-item-search').removeClass('change');
+             $('.menu-dropdown2 ').hide();
+             $('.menu-item-search').removeClass('active2');
+             $('.menu-dropdown').removeAttr('style');
+                          
          }
      });
  })
@@ -93,7 +100,7 @@
  
          $(`#dropdownList2-${$(this).attr('id').substr(14)}`).show();
      })
- 
+
  
  })
 
@@ -158,8 +165,6 @@ $(function(){
 
   })
 
-
-
 })
 
 
@@ -177,13 +182,21 @@ $(window).resize(function() {
         $('.mobile-menuItem').css('color','#fff');
         $('.mobile-menuItem2').removeClass('long');
 
-    // 新增0510
+    // 修改
         $('.mobile-yellow-menu').removeClass('open');
         $('.mobile_index_menuBtn').css('opacity','1');
         $('.mobile-yellow-menuItem').show();
         $('.mobile-contactForm').removeClass('open');
         $('.mobile-yellow-menuItemCont span').css('color','#000');
         $('.mobile-yellow-menuItemCont').css('background','rgb(255, 209, 0)');
+        }else{
+            $('.menu-item-search').removeClass('active');
+            $('.modal').removeClass('open');
+            $('body').removeClass('frozen');
+            $('.menu-item-search').removeClass('change');
+            $('.menu-dropdown2 ').hide();
+            $('.menu-item-search').removeClass('active2');
+            $('.menu-dropdown').removeAttr('style');
         }
 
 });
@@ -211,34 +224,118 @@ $(function(){
     console.log($('.steps_bg').offset());
 })
 
-//  新增 文章列表
+//  新增 文章列表 
 
-$(window).resize(function(){
-    let articleNum = $('.article_Content p').length;
-
+$(function(){
     
-    if($(window).width()<1112){
-
-        for(i=0;i<articleNum;i++){
-            let articleLength = $('.article_Content p')[i].innerText.length;
-            
-            if(articleLength>50){
-
-                let articleLengthLimit = $('.article_Content p')[i].innerText.substr(0,30);
-                $('.article_Content p')[i].innerText=`${articleLengthLimit}...`;
-                
+    let array=[];
+    $('.articleContent').each(function(index, value){
+        array.push(value.innerText);
+        
+    })
+    
+    function showMore(len){
+        $('.articleContent').each(function(index,value){
+            $(this).html(array[index]);
+            // console.log($(this).html().length);
+            if($(this).html().length > len){
+                let str = $(this).html().substring(0,len) + '......';
+                $(this).html(str);
             }
-
             
-            
-      
-      
-        }
-
-    
+        })
     }
 
+
+    function render(){
+        if($(window).width() > 1112){
+            showMore(80);
+        }else{
+            showMore(20);
+        }
+    }
+    
+    
+        $(window).resize(function(){
+            render();
+        })
+        render();
+    
+
 })
+
+// 螢幕縮小時，文章標題
+
+$(function(){
+    
+    let array=[];
+    $('.SmallArticle_Title h2').each(function(index, value){
+        array.push(value.innerText);
+        
+    })
+    
+    function showMore(len){
+        $('.SmallArticle_Title h2').each(function(index,value){
+            $(this).html(array[index]);
+            // console.log($(this).html().length);
+            if($(this).html().length > len){
+                let str = $(this).html().substring(0,len) + '......';
+                $(this).html(str);
+            }
+            
+        })
+    }
+
+
+    function render(){
+        if($(window).width() > 851){
+            showMore(100);
+        }else{
+            showMore(38);
+        }
+    }
+    
+    
+        $(window).resize(function(){
+            render();
+        })
+        render();
+    
+
+})
+
+
+
+
+
+
+
+// $(window).resize(function(){
+//     let articleNum = $('.article_Content p').length;
+
+    
+//     if($(window).width()<1112){
+
+//         for(i=0;i<articleNum;i++){
+//             let articleLength = $('.article_Content p')[i].innerText.length;
+            
+//             if(articleLength>50){
+
+//                 let articleLengthLimit = $('.article_Content p')[i].innerText.substr(0,30);
+//                 $('.article_Content p')[i].innerText=`${articleLengthLimit}...`;
+                
+//             }
+
+            
+            
+      
+      
+//         }
+
+    
+//     }
+
+// })
 
  
  
@@ -261,10 +358,10 @@ $(window).resize(function(){
  //聯絡頁面：信箱傳送
  //宣告預設表單內容為空 （你想要的話也可以加東西）
  var initSubject='',initBody='';
- 
  //按下傳送按鈕後執行
  function submitHandler(){
-     var to = "andy510112@gmail.com";//寫死的傳送對象 就是公司的信箱 不會顯示在網頁上
+     
+     var to = "";//寫死的傳送對象 就是公司的信箱 不會顯示在網頁上
      var name = nameText.value;//讀取ID為 nameTextuser 物件中的值
      var email = emailText.value;
     //  var tel = telText.value;
@@ -274,7 +371,7 @@ $(window).resize(function(){
          body += "From："+nameText.value+'%0A';
          body += "Email："+emailText.value+'%0A';
         //  body += "Tel："+telText.value;
-//傳送的主要程式碼
+        //傳送的主要程式碼
      mailTo.href="mailto:"+to+"&body="+body;
      mailTo.click();
  }
